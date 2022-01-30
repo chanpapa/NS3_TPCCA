@@ -18,6 +18,7 @@ postbdw_list=[[ 24, 1, 100000, 1], [ 48, 2, 100000, 1 ] ,]
 #if you choose to run the counter experiment
 delay_list = [ ["90ms","25ms" ],["140ms" , "70ms"], ]
 bdw_list=[ [ 12, 1, 200000, 1],[ 48, 2, 200000, 1] ]
+changingtime=100
 [generalsetting]
 packet_buffer_list = ["20p","60p","100p"]
 # how many iterations need to run for one set of parameters
