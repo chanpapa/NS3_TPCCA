@@ -26,13 +26,14 @@ if Type=="uni":
     prebdw_list=configs['unisetting']['prebdw_list']
     postbdw_list=configs['unisetting']['postbdw_list']
     Unitraceloader(prebdw_list,postbdw_list)
-    Uniexp(exp_duration,packet_buffer_list,iteration,ccp_algs,delay_list,prebdw_list,postbdw_list)
+    Uniexp(exp_duration,packet_buffer_list,iteration,ccp_algs,delay_list,prebdw_list,postbdw_list，changingtime)
 
 elif Type=="counter":
     delay_list=configs['countersetting']['delay_list']
     bdw_list=configs['countersetting']['bdw_list']
+    changingtime=config['countersetting']['changingtime']
     Countertraceloader(bdw_list)    
-    Counterexp(exp_duration,packet_buffer_list,iteration,ccp_algs,delay_list,bdw_list)
+    Counterexp(exp_duration,packet_buffer_list,iteration,ccp_algs,delay_list,bdw_list,changingtime)
 
 else :
     print("Wrong setting!")
